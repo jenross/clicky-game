@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Bey-1",
+    "image": "../images/beyonce-1.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 2,
+    "name": "Bey-2",
+    "image": "../images/beyonce-2.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 3,
+    "name": "Bey-3",
+    "image": "../images/beyonce-3.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 4,
+    "name": "Bey-4",
+    "image": "../images/beyonce-4.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 5,
+    "name": "Bey-5",
+    "image": "../images/beyonce-5.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 6,
+    "name": "Bey-6",
+    "image": "../images/beyonce-6.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 7,
+    "name": "Bey-7",
+    "image": "../images/beyonce-7.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 8,
+    "name": "Bey-8",
+    "image": "../images/beyonce-8.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 9,
+    "name": "Bey-9",
+    "image": "../images/beyonce-9.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 10,
+    "name": "Bey-10",
+    "image": "../images/beyonce-10.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 11,
+    "name": "Bey-11",
+    "image": "../images/beyonce-11.png", 
+    "chosenBey": false
+  },
+  {
+    "id": 12,
+    "name": "Bey-12",
+    "image": "../images/beyonce-12.png", 
+    "chosenBey": false
+  }
+]
+  
