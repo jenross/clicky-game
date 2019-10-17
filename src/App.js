@@ -54,7 +54,7 @@ class App extends Component {
 
   render() {
     return (
-        <Wrapper>
+      <React.Fragment>
           <nav className="nav-container">
             <h1 className="main-header">Slay the Beys</h1>
             <ul className="nav-elements">
@@ -63,21 +63,23 @@ class App extends Component {
               <li className="each-nav-element">{this.state.status}</li>
             </ul>
           </nav>
-        {this.state.beyonce.map(beyonce => (
-          <BeyCards
-            handleClickedBey={this.handleClickedBey}
-            id={beyonce.id}
-            key={beyonce.id}
-            name={beyonce.name}
-            image={beyonce.image}
-          />
-        ))}
+        <Wrapper>
+          {this.state.beyonce.map(beyonce => (
+            <BeyCards
+              handleClickedBey={this.handleClickedBey}
+              id={beyonce.id}
+              key={beyonce.id}
+              name={beyonce.name}
+              image={beyonce.image}
+            />
+          ))}
+        </Wrapper>  
         <footer className="footer-container">
           <p className="footer-content">
               © 2019 <a className="github-link" href='https://github.com/jenross'>Jennifer Ross</a>
           </p>
         </footer>
-      </Wrapper>   
+      </React.Fragment>
     );
   }
 }

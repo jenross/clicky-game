@@ -4,36 +4,42 @@ html, body {
     text-align: center; 
     width: 100%; 
     margin: 0; 
+    background: url('../src/components/Wrapper/gold_bkgrnd.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .main-header {
-    margin: 0 auto; 
-    margin-top: 10px; 
+    font-size: 55px; 
+    padding-top: 5px; 
 }
 
 .nav-container {
     display: inline-flex; 
     flex-direction: row;  
-    background: rgba(215, 150, 32, 0.7);
+    justify-content: space-around; 
+    background: rgba(215, 150, 32, 0.6);
     width: 100%;
     border-bottom: 1px solid black; 
-    margin-top: -25px; 
     height: 125px;
 }
 
 .nav-elements {
     list-style-type: none;
+    padding-top: 5px; 
 }
 
 .each-nav-element {
-    display: inline-flex; 
-    padding: 25px; 
     font-size: 20px; 
 }
 
 .footer-container {
-    display: block; 
-    margin: 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    background-color: black; 
 }
 
 .footer-content {

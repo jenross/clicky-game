@@ -1,14 +1,9 @@
 .wrapper {
-    background: url('gold_bkgrnd.jpg') no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: flex-start;
     overflow: auto;
     text-align: center; 
