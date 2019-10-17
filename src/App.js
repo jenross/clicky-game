@@ -7,6 +7,7 @@ import Wrapper from './components/Wrapper/Wrapper'
 class App extends Component {
   state = {
     beyonce, 
+    chosen: false,
     score: 0, 
     highScore: 0,
     status: "Click each Bey one time to slay a high score!"
@@ -17,17 +18,12 @@ class App extends Component {
     const beyoncePicked = this.state.beyonce.filter(beyonce => beyonce.id === id);
     console.log(beyoncePicked);
 
-    let beyStatus = beyoncePicked[0].chosenBey; 
-    console.log(beyStatus);
-    //logic for updating scores, status, and shuffling cards will go here 
-    if (this.state.score < 11 && !beyStatus) {
-      beyStatus = true;
+    if (this.state.score < 11 && !beyoncePicked[0].chosenBey) {
+      beyoncePicked[0].chosenBey = true;
       console.log(beyoncePicked); 
-      console.log(beyStatus);
-      beyonce.sort(() => Math.random() - 0.5);
-
       this.setState({ beyonce });
       console.log(beyonce);
+      beyonce.sort(() => Math.random() - 0.5);
       this.setState({ score: this.state.score + 1 });
       this.setState({ status: "You're slaying!" });
       if (this.state.score > this.state.highScore) {
