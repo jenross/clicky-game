@@ -55,3 +55,16 @@ a:hover {
     color: darkgrey; 
     text-decoration: none; 
 }
+
+@media (max-width: 738px) {
+    .main-header {
+        font-size: 40px; 
+        margin-left: 20px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .main-header {
+        font-size: 30px; 
+    }
+}
