@@ -14,11 +14,26 @@ class App extends Component {
 
   handleClickedBey = id => {
   
-    const beyoncesPicked = this.state.beyonce.filter(beyonce => beyonce.id === id);
-    
+    const beyoncePicked = this.state.beyonce.filter(beyonce => beyonce.id === id);
+    console.log(beyoncePicked);
+
+    let beyStatus = beyoncePicked[0].chosenBey; 
+    console.log(beyStatus);
     //logic for updating scores, status, and shuffling cards will go here 
-    
-    
+    if (this.state.score < 11 && !beyStatus) {
+      beyStatus = true;
+      console.log(beyoncePicked); 
+      console.log(beyStatus);
+      beyonce.sort(() => Math.random() - 0.5);
+
+      this.setState({ beyonce });
+      console.log(beyonce);
+      this.setState({ score: this.state.score + 1 });
+      this.setState({ status: "You're slaying!" });
+      if (this.state.score > this.state.highScore) {
+        this.setState({ highScore: this.state.score });
+      }
+    }
   };
 
   render() {

@@ -1,10 +1,11 @@
 .card {
-    background: darkgrey;
+    background: goldenrod;
+    border: 1px groove goldenrod;
     border-radius: 2px;
-    height: 250px;
+    height: 225px;
     margin: 1rem;
     position: relative;
-    width: 250px;
+    width: 225px;
     box-shadow: 0 3px 6px #0D090A, 0 3px 6px #0D090A;
 }
   
