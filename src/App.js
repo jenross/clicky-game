@@ -56,6 +56,7 @@ class App extends Component {
     return (
         <Wrapper>
           <nav className="nav-container">
+            <h1 className="main-header">Slay the Beys</h1>
             <ul className="nav-elements">
               <li className="each-nav-element">Score: {this.state.score}</li>
               <li className="each-nav-element">High Score: {this.state.highScore}</li>
