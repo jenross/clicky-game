@@ -7,7 +7,6 @@ import Wrapper from './components/Wrapper/Wrapper'
 class App extends Component {
   state = {
     beyonce, 
-    chosen: false,
     score: 0, 
     highScore: 0,
     status: "Click each Bey one time to slay a high score!"
@@ -29,7 +28,16 @@ class App extends Component {
       if (this.state.score > this.state.highScore) {
         this.setState({ highScore: this.state.score });
       }
+    } else if (this.state.score < 11 && beyoncePicked[0].chosenBey) {
+        this.setState({ status: "That wasn't a fresh Bey! Try to slay again!" });
+        this.setState({ score: 0 });
+        beyonce.forEach(beyonce => {
+          beyonce.chosenBey = false; 
+        });
+        this.setState({ beyonce });
+        console.log(beyonce);
     }
+
   };
 
   render() {
