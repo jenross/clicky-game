@@ -28,7 +28,7 @@ class App extends Component {
       if (this.state.score > this.state.highScore) {
         this.setState({ highScore: this.state.score });
       }
-    } else if (this.state.score < 11 && beyoncePicked[0].chosenBey) {
+    } else if (this.state.score <= 11 && beyoncePicked[0].chosenBey) {
         this.setState({ status: "That wasn't a fresh Bey! Try to slay again!" });
         this.setState({ score: 0 });
         beyonce.forEach(beyonce => {
@@ -36,8 +36,20 @@ class App extends Component {
         });
         this.setState({ beyonce });
         console.log(beyonce);
-    }
+    } else if (this.state.score === 11 && !beyoncePicked[0].chosenBey) {
+      this.setState({ status: "Congratulations! You slayed all the Beys!" });
+      this.setState({ highScore: 12 });
+      this.setState({ score: 0 });
 
+      beyonce.forEach(beyonce => {
+        beyonce.chosenBey = false; 
+      });
+
+      this.setState({ beyonce });
+      console.log(beyonce);
+
+      beyonce.sort(() => Math.random() - 0.5);
+    }
   };
 
   render() {
