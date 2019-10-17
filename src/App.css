@@ -1,10 +1,19 @@
 html, body {
     font-family: 'Arimo', sans-serif;
     font-weight: bolder; 
+    text-align: center; 
+    width: 100%; 
+    margin: 0; 
 }
 
 .nav-container {
-    display: flex; 
+    display: inline-flex; 
+    flex-direction: row;  
+    background: rgba(230, 150, 32, 0.7);
+    width: 100%;
+    border-bottom: 1px solid black; 
+    margin-top: -25px; 
+    height: 125px;
 }
 
 .nav-elements {
@@ -12,5 +21,24 @@ html, body {
 }
 
 .each-nav-element {
-    
+    display: inline-flex; 
+    padding: 50px; 
+}
+
+.footer-container {
+
+}
+
+.footer-content {
+    color: goldenrod; 
+}
+
+a {
+    text-decoration: none; 
+    color: goldenrod; 
+}
+
+a:hover {
+    color: darkgrey; 
+    text-decoration: none; 
 }
