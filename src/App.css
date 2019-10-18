@@ -16,13 +16,14 @@ html, body {
 .main-header {
     font-size: 55px; 
     padding-top: 5px; 
+    margin-top: 10px; 
 }
 
 .nav-container {
     display: inline-flex; 
     flex-direction: row;  
     justify-content: space-around; 
-    background: rgba(61, 12, 17, 0.5);
+    background:rgba(52,46,55,0.8);
     width: 100%;
     border-bottom: 1px solid black; 
     height: 125px;
@@ -58,6 +59,7 @@ a:hover {
     .main-header {
         font-size: 40px; 
         margin-left: 20px; 
+        margin-top: 10px; 
     }
 }
 
