@@ -4,6 +4,8 @@ import BeyCards from './components/BeyCards/BeyCards'
 import beyonce from "./beyonce.json";
 import Wrapper from './components/Wrapper/Wrapper'
 
+let highScoreCount = 0;
+
 class App extends Component {
   state = {
     beyonce, 
@@ -25,8 +27,9 @@ class App extends Component {
       beyonce.sort(() => Math.random() - 0.5);
       this.setState({ score: this.state.score + 1 });
       this.setState({ status: "You're slaying!" });
-      if (this.state.score > this.state.highScore) {
-        this.setState({ highScore: this.state.score });
+      if (this.state.highScore <= this.state.score) {
+        highScoreCount++;
+        this.setState({ highScore: highScoreCount });
       }
     } else if (this.state.score <= 11 && beyoncePicked[0].chosenBey) {
         this.setState({ status: "That wasn't a fresh Bey! Try to slay again!" });
